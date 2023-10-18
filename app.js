@@ -57,7 +57,7 @@ app.post("/register", async (request, response) => {
       response.send("User created successfully");
     }
   } else {
-    response.status = 400;
+    response.status(400);
     response.send("User already exists");
   }
 });
